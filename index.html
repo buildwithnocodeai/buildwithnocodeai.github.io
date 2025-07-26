@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="about-image">
-            <img src="https://via.placeholder.com/350" alt="A portrait of Saravanan" class="profile-image">
+            <img src="https://placehold.co/350x350/007bff/FFFFFF/png?text=Saravanan" alt="A portrait of Saravanan" class="profile-image">
           </div>
         </div>
       </div>
@@ -66,35 +66,41 @@
     <section id="projects" class="projects-section">
       <div class="container">
         <h2>Featured Projects</h2>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="react">React</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        </div>
         <div class="projects-grid">
           <div class="project-card">
-            <img src="https://via.placeholder.com/400x250" alt="Project One Screenshot" class="project-image">
+            <img src="https://placehold.co/400x250/6c757d/FFFFFF/png?text=Project" alt="Project One Screenshot" class="project-image">
             <div class="project-info">
               <h3 class="project-title">E-commerce Platform</h3>
               <p class="project-description">A full-featured e-commerce site with a custom CMS, payment gateway integration, and a responsive, mobile-first design.</p>
               <div class="project-tags">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
+                <span data-tag="react">React</span>
+                <span data-tag="nodejs">Node.js</span>
+                <span data-tag="mongodb">MongoDB</span>
               </div>
               <a href="#" class="btn btn-secondary">View Details</a>
             </div>
           </div>
           <div class="project-card">
-            <img src="https://via.placeholder.com/400x250" alt="Project Two Screenshot" class="project-image">
+            <img src="https://placehold.co/400x250/6c757d/FFFFFF/png?text=Project" alt="Project Two Screenshot" class="project-image">
             <div class="project-info">
               <h3 class="project-title">Data Visualization Dashboard</h3>
               <p class="project-description">An interactive dashboard for visualizing complex datasets, built with D3.js and a Python/Flask backend.</p>
               <div class="project-tags">
-                <span>D3.js</span>
-                <span>Python</span>
-                <span>Flask</span>
+                <span data-tag="d3js">D3.js</span>
+                <span data-tag="python">Python</span>
+                <span data-tag="flask">Flask</span>
               </div>
               <a href="#" class="btn btn-secondary">View Details</a>
             </div>
           </div>
           <div class="project-card">
-            <img src="https://via.placeholder.com/400x250" alt="Project Three Screenshot" class="project-image">
+            <img src="https://placehold.co/400x250/6c757d/FFFFFF/png?text=Project" alt="Project Three Screenshot" class="project-image">
             <div class="project-info">
               <h3 class="project-title">Open Source Contribution</h3>
               <p class="project-description">Contributed to a popular open-source library, focusing on improving performance and adding new features.</p>

@@ -2,100 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saravanan | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: lch(95.49% 0.01 296.81);
-    }
-
-    header {
-      background-color: #333;
-      color: #ffffff;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #444;
-      padding: 0.5rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: hsl(0, 0%, 20%);
-    }
-
-    .project {
-      margin-bottom: 1.5rem;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>saravanan</h1>
-    <p>Web Developer | Designer | AI Enthusiast</p>
+    <div class="container">
+      <h1>Saravanan</h1>
+      <p>Web Developer | Designer | AI Enthusiast</p>
+    </div>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
   <div class="container">
     <section id="about">
+      <img id="profile-pic" src="https://via.placeholder.com/150" alt="Saravanan">
       <h2>About Me</h2>
-      <p>Hello! I'm a passionate developer learning full-stack development and AI. I love building websites and experimenting with modern tools.</p>
+      <p>Hello! I'm a passionate developer learning full-stack development and AI. I love building websites and experimenting with modern tools. I am currently learning how to use Gemini to help me with my projects.</p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div class="project">
         <h3>Project One</h3>
-        <p>A simple to-do app built with HTML, CSS, and JavaScript.</p>
+        <p>A simple to-do app built with HTML, CSS, and JavaScript. This project helped me to understand the basics of web development.</p>
       </div>
       <div class="project">
         <h3>Project Two</h3>
-        <p>Responsive portfolio website design using Flexbox and Grid.</p>
+        <p>A responsive portfolio website design using Flexbox and Grid. This project helped me to understand how to create responsive layouts.</p>
+      </div>
+      <div class="project">
+        <h3>Project Three</h3>
+        <p>A weather app that uses an API to fetch weather data. This project helped me to understand how to work with APIs.</p>
       </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: buildwithnocodeai@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ai-no-code-632148376/" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
     </section>
   </div>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Saravanan. All rights reserved.</p>
   </footer>
 
 </body>

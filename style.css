@@ -316,3 +316,69 @@ body {
     text-align: center;
     border-top: 1px solid var(--card-border);
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .main-nav li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-top: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack projects on small screens */
+    }
+
+    .contact-form-container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section,
+    .about-section,
+    .projects-section,
+    .contact-section {
+        padding: 40px 0; /* Reduce padding on sections for very small screens */
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .filter-btn {
+        margin: 5px;
+        padding: 8px 15px;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+}

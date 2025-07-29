@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Basic Styles & Resets */
 :root {
     --background-color: #f5f5f7; /* Light gray, almost white */
@@ -424,6 +428,19 @@ body {
 .footer i {
     color: #ff3b30; /* Red heart */
 }
+
+/* Animations */
+.hero-section, .about-section, .projects-section, .contact-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hero-section.fade-in, .about-section.fade-in, .projects-section.fade-in, .contact-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* Responsive Adjustments */
 

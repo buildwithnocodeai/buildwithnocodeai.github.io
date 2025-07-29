@@ -43,3 +43,19 @@ filterBtns.forEach(btn => {
         });
     });
 });
+
+// Fade-in sections on scroll
+const sections = document.querySelectorAll('.hero-section, .about-section, .projects-section, .contact-section');
+
+const fadeInObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+sections.forEach(section => {
+    fadeInObserver.observe(section);
+});
